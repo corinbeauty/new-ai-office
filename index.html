@@ -1,42 +1,34 @@
-"麥麥" (Mai Mai), a Senior Frontend Engineer.
-Mimic the webpage `https://m.saydou.com/login`.
-Account background: `evacorin0707`.
-CEO's request: (The prompt says "執行長要求：" but it's empty/missing. I should assume the basic request is to clone the login page based on the provided URL).
-Complete single HTML file (HTML + CSS + JS).
-Direct output of HTML content, *no markdown tags* (no ```html ... ```).
+*   Persona: 麥麥 (Mai Mai), Senior Frontend Engineer.
+    *   Goal: Precisely imitate the login page at `https://m.saydou.com/login`.
+    *   Account: `evacorin0707` (likely as a default value or placeholder).
+    *   Technical Requirements: Single HTML file, embedded CSS and JS.
+    *   Output Constraints: No explanatory text, no markdown tags. Start directly from `<!DOCTYPE html>`.
 
-    *   URL: `https://m.saydou.com/login`
-    *   Looking at the site (mental or actual access): It's a mobile-oriented login page.
-    *   Typical elements:
-        *   Logo/Header.
-        *   Input fields for username/phone and password.
-        *   "Remember me" or "Stay logged in" checkbox.
-        *   "Forgot password" link.
+    *   Target: `https://m.saydou.com/login`
+    *   Visual elements:
+        *   Mobile-first design.
+        *   Clean white background.
+        *   Logo/Title at the top.
+        *   Input fields for account/phone and password.
         *   Login button.
-        *   Register link/button.
-        *   Footer/Legal links.
-        *   Design style: Clean, modern, likely responsive (mobile-first).
-        *   Specifics for `saydou`: Usually a minimalist style, white/light grey background, primary color likely a specific blue or corporate color.
+        *   Forgot password link.
+        *   Register link.
+        *   Third-party login options (often WeChat, QQ, etc., depending on the site).
+        *   Footer with copyright or terms.
+    *   Specific colors: Usually a primary brand color (e.g., blue or orange, but for Saydou it's a specific theme).
 
-    *   *Structure:* `<!DOCTYPE html>`, `<html>`, `<head>`, `<body>`.
-    *   *CSS:* Use a modern approach (Flexbox, CSS variables for colors). Since it's mobile-first, set `viewport` correctly.
-    *   *JS:* Basic form validation and a simulated login action.
-    *   *Customization:* Incorporate the account background `evacorin0707` (perhaps as a pre-filled value or a hidden metadata field).
+    *   *Structure*:
+        *   Container for centering.
+        *   Form elements.
+        *   Links for navigation.
+    *   *Styling*:
+        *   Responsive layout.
+        *   Modern fonts.
+        *   Border-radius, soft shadows, specific brand colors.
+    *   *Behavior*:
+        *   Basic validation.
+        *   Button click handler.
 
-    *   Background: Light gray/white.
-    *   Container: Centered card or full-screen mobile layout.
-    *   Input: Rounded corners, soft borders, placeholder text.
-    *   Button: Full-width, bold color (e.g., a shade of blue #007bff or similar).
-    *   Typography: Sans-serif (Inter, Roboto, or system-ui).
-
-    *   The user explicitly said "嚴禁使用 markdown 標籤包圍" (Strictly forbidden to use markdown tags). This means no ```html blocks. Just the raw code.
-
-    *   *Head:* Meta tags, Title, Styles.
-    *   *Body:*
-        *   Logo section.
-        *   Form:
-            *   Username input (value="evacorin0707").
-            *   Password input.
-            *   Action buttons.
-        *   Bottom links.
-    *   *JS:* Handle `onsubmit`, maybe a loading animation.
+    *   Strictly no markdown (no ```html ... ```).
+    *   Strictly no preamble.
+    *   Start with `<!DOCTYPE html>`.
