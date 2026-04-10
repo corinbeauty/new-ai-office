@@ -1,32 +1,45 @@
 
-*   Persona: 麥麥 (Mai Mai).
-*   Task: Imitate a webpage based on "5232", "Account Background: 4234", and "CEO requirements: [empty]".
-*   Output Format: A single, complete HTML file (including CSS and JS).
-*   Constraint: Use the latest architecture, high code quality.
+*   Role: 麥麥 (Mai Mai).
+*   Task: Mimic the webpage `https://m.saydou.com/login`.
+*   Account Background: `evacorin0707`.
+*   CEO Requirement: (Blank, but implied as "high quality" and "latest architecture").
+*   Output: A single, complete HTML file containing CSS and JS.
 
-    *   The prompt uses numbers ("5232", "4234") instead of descriptive text for the webpage layout and account background.
-    *   The "CEO requirements" field is empty.
-    *   *Interpretation:* In some internet subcultures or specific internal jargon, these numbers might mean something, but in a general LLM context, they are ambiguous. However, looking at the pattern, this looks like a "roleplay" or "test" prompt where the user is providing placeholders.
-    *   *Decision:* Since "5232" and "4234" aren't standard web design patterns, I need to interpret them creatively or ask for clarification. *Wait*, usually, when users provide numbers like this in a prompt, they might be referring to a specific "style" or it's a test of the AI's ability to handle vague instructions by creating a "professional, modern, and high-end" generic corporate/dashboard page that *looks* like it belongs to a high-level account.
-    *   *Better Interpretation:* Let's assume "5232" is a placeholder for a "Modern Financial/Data Dashboard" and "4234" refers to a "VIP/Premium Account Profile". Since the CEO requirements are blank, I will aim for a "Luxury, Modern, Minimalist, and High-Performance" design.
+    *   *URL:* `https://m.saydou.com/login`
+    *   *Type:* Mobile login page.
+    *   *Visuals:* Clean, minimalistic, typically featuring a logo, input fields for username/phone and password, a "Login" button, and links for "Forgot Password" or "Register".
+    *   *Styling:* Modern, likely using a framework like Tailwind or a custom CSS reset. Mobile-first design.
+    *   *Behavior:* Validation on inputs, loading states on the button.
 
-    *   *Architecture:* Modern HTML5, Tailwind CSS (via CDN for a single file), Lucide Icons (via CDN), and vanilla JavaScript or Alpine.js for interactivity.
-    *   *Visual Style:* Dark mode (often associated with "premium" accounts), glassmorphism, gold/blue accents, clean typography (Inter/Roboto).
-    *   *Components:*
-        *   Navigation bar (Logo, Menu, Profile).
-        *   Hero section (Welcome back, Account ID 4234).
-        *   Stats Grid (Financials/Metrics).
-        *   Activity Chart (using Chart.js).
-        *   Transaction/Data Table.
-        *   Quick Action buttons.
+    *   *HTML5:* Semantic tags.
+    *   *CSS:* Tailwind CSS (via CDN) for rapid, modern, and responsive styling. This fulfills the "latest architecture" requirement as it's industry-standard for utility-first design.
+    *   *JavaScript:* Vanilla JS (ES6+) for form handling.
+    *   *Theme:* Light/Dark mode support (optional but a nice touch for "high quality").
 
-    *   *Header:* Sticky, blurred background.
-    *   *Main Layout:* Sidebar + Content Area (or a single column centered layout for simplicity in a single file). Let's go with a professional Dashboard layout.
-    *   *Color Palette:* Deep slate `#0f172a`, Accent gold/electric blue `#3b82f6`.
+    *   *Structure:*
+        *   Container: Full screen, centered.
+        *   Header: Logo/Welcome text.
+        *   Form:
+            *   Account field (pre-filled or placeholder based on `evacorin0707`).
+            *   Password field.
+            *   Login button.
+            *   Auxiliary links (Forgot password, Sign up).
+        *   Footer: Copyright/Legal info.
 
-    *   *HTML:* Use semantic tags (`<header>`, `<main>`, `<section>`, `<footer>`).
-    *   *CSS:* Tailwind CSS is the industry standard for "latest architecture" fast prototyping.
-    *   *JS:* Chart.js for the "5232" (implying data/metrics) part.
+    *   *Tailwind Classes:*
+        *   `bg-gray-50` or `bg-white`.
+        *   `flex flex-col justify-center items-center`.
+        *   `w-full max-w-sm`.
+        *   `rounded-lg`, `border`, `p-4`.
+        *   `bg-blue-600` (or similar primary color).
 
-    *   *Self-Correction during drafting:* The user called me "麥麥". I should respond in a friendly, efficient tone.
-    *   *Addressing the numbers:* I will incorporate "5232" as the Project Code and "4234" as the User Account ID to show I've used the inputs.
+    *   *JS Logic:*
+        *   Prevent default form submission.
+        *   Show a loading spinner on the button.
+        *   Simple alert for "Login successful" or "Error".
+
+    *   Make it look professional.
+    *   Add a smooth transition effect.
+    *   Ensure the `evacorin0707` account is highlighted or pre-set.
+
+    *   *Self-Correction during drafting:* The user specifically mentioned the account `evacorin0707`. I should set this as the value of the account input field to make it feel personalized to the "background" provided.
