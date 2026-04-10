@@ -1,45 +1,42 @@
+"麥麥" (Mai Mai), a Senior Frontend Engineer.
+Mimic the webpage `https://m.saydou.com/login`.
+Account background: `evacorin0707`.
+CEO's request: (The prompt says "執行長要求：" but it's empty/missing. I should assume the basic request is to clone the login page based on the provided URL).
+Complete single HTML file (HTML + CSS + JS).
+Direct output of HTML content, *no markdown tags* (no ```html ... ```).
 
-*   Role: 麥麥 (Mai Mai).
-*   Task: Mimic the webpage `https://m.saydou.com/login`.
-*   Account Background: `evacorin0707`.
-*   CEO Requirement: (Blank, but implied as "high quality" and "latest architecture").
-*   Output: A single, complete HTML file containing CSS and JS.
+    *   URL: `https://m.saydou.com/login`
+    *   Looking at the site (mental or actual access): It's a mobile-oriented login page.
+    *   Typical elements:
+        *   Logo/Header.
+        *   Input fields for username/phone and password.
+        *   "Remember me" or "Stay logged in" checkbox.
+        *   "Forgot password" link.
+        *   Login button.
+        *   Register link/button.
+        *   Footer/Legal links.
+        *   Design style: Clean, modern, likely responsive (mobile-first).
+        *   Specifics for `saydou`: Usually a minimalist style, white/light grey background, primary color likely a specific blue or corporate color.
 
-    *   *URL:* `https://m.saydou.com/login`
-    *   *Type:* Mobile login page.
-    *   *Visuals:* Clean, minimalistic, typically featuring a logo, input fields for username/phone and password, a "Login" button, and links for "Forgot Password" or "Register".
-    *   *Styling:* Modern, likely using a framework like Tailwind or a custom CSS reset. Mobile-first design.
-    *   *Behavior:* Validation on inputs, loading states on the button.
+    *   *Structure:* `<!DOCTYPE html>`, `<html>`, `<head>`, `<body>`.
+    *   *CSS:* Use a modern approach (Flexbox, CSS variables for colors). Since it's mobile-first, set `viewport` correctly.
+    *   *JS:* Basic form validation and a simulated login action.
+    *   *Customization:* Incorporate the account background `evacorin0707` (perhaps as a pre-filled value or a hidden metadata field).
 
-    *   *HTML5:* Semantic tags.
-    *   *CSS:* Tailwind CSS (via CDN) for rapid, modern, and responsive styling. This fulfills the "latest architecture" requirement as it's industry-standard for utility-first design.
-    *   *JavaScript:* Vanilla JS (ES6+) for form handling.
-    *   *Theme:* Light/Dark mode support (optional but a nice touch for "high quality").
+    *   Background: Light gray/white.
+    *   Container: Centered card or full-screen mobile layout.
+    *   Input: Rounded corners, soft borders, placeholder text.
+    *   Button: Full-width, bold color (e.g., a shade of blue #007bff or similar).
+    *   Typography: Sans-serif (Inter, Roboto, or system-ui).
 
-    *   *Structure:*
-        *   Container: Full screen, centered.
-        *   Header: Logo/Welcome text.
+    *   The user explicitly said "嚴禁使用 markdown 標籤包圍" (Strictly forbidden to use markdown tags). This means no ```html blocks. Just the raw code.
+
+    *   *Head:* Meta tags, Title, Styles.
+    *   *Body:*
+        *   Logo section.
         *   Form:
-            *   Account field (pre-filled or placeholder based on `evacorin0707`).
-            *   Password field.
-            *   Login button.
-            *   Auxiliary links (Forgot password, Sign up).
-        *   Footer: Copyright/Legal info.
-
-    *   *Tailwind Classes:*
-        *   `bg-gray-50` or `bg-white`.
-        *   `flex flex-col justify-center items-center`.
-        *   `w-full max-w-sm`.
-        *   `rounded-lg`, `border`, `p-4`.
-        *   `bg-blue-600` (or similar primary color).
-
-    *   *JS Logic:*
-        *   Prevent default form submission.
-        *   Show a loading spinner on the button.
-        *   Simple alert for "Login successful" or "Error".
-
-    *   Make it look professional.
-    *   Add a smooth transition effect.
-    *   Ensure the `evacorin0707` account is highlighted or pre-set.
-
-    *   *Self-Correction during drafting:* The user specifically mentioned the account `evacorin0707`. I should set this as the value of the account input field to make it feel personalized to the "background" provided.
+            *   Username input (value="evacorin0707").
+            *   Password input.
+            *   Action buttons.
+        *   Bottom links.
+    *   *JS:* Handle `onsubmit`, maybe a loading animation.
